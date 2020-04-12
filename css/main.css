@@ -14,6 +14,7 @@ body {
     margin: 20px auto;
     width:100%;
     font-size: 22px;
+    color:white;
 } 
 
 .check {
@@ -21,6 +22,11 @@ body {
     background-color: #88839e;
     line-height: 50px;
     padding-left:10px;
+    padding:5px 5px;
+}
+
+.checkbox label:active{
+    background-color: rgb(184, 130, 147);
 }
 
 .check:hover{
@@ -33,8 +39,9 @@ body {
     background-color: #7a7593;
 }
 
-input:checked + span{
+input:checked + span {
     text-decoration: line-through;
+    color:#a3a0b5 !important;
 }
 
 header {
@@ -68,3 +75,20 @@ header {
     padding:15px;
 }
 
+span > span {
+    font-size: 20px;
+    color:#c8b9c1;
+    text-decoration: inherit;
+}
+
+ span > span::after {
+    content:")";
+}
+
+span > span::before {
+    content:"(";
+}
+
+
+
+  
