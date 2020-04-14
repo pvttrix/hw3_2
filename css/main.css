@@ -21,8 +21,9 @@ body {
     display:block;
     background-color: #88839e;
     line-height: 50px;
-    padding-left:10px;
-    padding:5px 5px;
+    
+    padding:10px 10px;
+
 }
 
 .checkbox label:active{
@@ -39,9 +40,17 @@ body {
     background-color: #7a7593;
 }
 
+input {
+    transform:scale(1.4);
+}
+
 input:checked + span {
-    text-decoration: line-through;
-    color:#a3a0b5 !important;
+    text-decoration: none;
+    background-image: linear-gradient(#c8b9c1,#c8b9c1);
+    background-size: 100% 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#c8b9c1;
 }
 
 header {
@@ -88,6 +97,12 @@ span > span {
 span > span::before {
     content:"(";
 }
+
+
+
+
+
+
 
 
 
